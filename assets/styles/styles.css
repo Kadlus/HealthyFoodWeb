@@ -8,6 +8,9 @@
 
 body {
     margin: 0;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .nav-links {
@@ -71,7 +74,7 @@ body {
 }
 
 .menu-items {
-    width: 95%;
+    width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -92,9 +95,9 @@ body {
 
 .salad-section {
     width: 70%;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: auto auto 150px;
 }
 
 .salad {
@@ -121,4 +124,86 @@ body {
 .salad-img img {
     max-width: 200px;
     height: auto;
+}
+
+.pasta-section {
+    position: relative;
+    min-height: 850px;
+}
+
+.musli {
+    background: url("../images/pexels-food-photo.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.pasta {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+}
+
+.pasta-item {
+    background: var(--secondary-color);
+    padding: 20px;
+}
+
+.pasta-item h2 {
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.pasta-item span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.salads-snacks {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+.left-side {
+    width: 40%;
+}
+
+.left-side h2 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.orange-line {
+    height: 14px;
+    width: 50%;
+    background: var(--orange);
+    margin-bottom: 48px;
+}
+
+.right-side img {
+    max-width: 700px;
+}
+
+.snack-items {
+    padding: 0;
+    list-style: none;
+}
+
+.snack-items li {
+    margin-bottom: 18px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
